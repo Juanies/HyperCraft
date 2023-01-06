@@ -1,0 +1,71 @@
+@import 'variables';
+
+.header{
+    max-height: 6em;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: $bg-card-color;
+    align-items: center;
+    position: fixed;
+}
+
+.header-img{
+    height: 5em;
+    width: 5em;
+}
+
+.header-titles{
+    display: flex;
+    align-items: center;
+}
+
+.header-title{
+    font-family: $mine-font-family;
+    margin: 0 .5em 0 .5em;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.nav-item{
+    color: $text-color;
+    margin: 0 .5em 0 .5em;
+}
+
+.nav-link{
+    font-family: $mine-font-family;
+    color: $text-color;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+.nav-link:hover{
+    color: $orange;
+    transition: color 0.4s;
+}
+
+
+.header__rrss-list{
+    display: flex;
+    list-style: none;
+}
+
+.header__rrss-item{
+    margin: 0 .4em 0 .4em;
+}
+
+.header__rrss-img{
+    height: 1.2em;
+    width: 1.2em;
+    transition: all 0.2s;
+}
+
+.header__rrss-img:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(2px 2px 2px $orange);
+    transition: all 0.2s;
+}

@@ -1,0 +1,126 @@
+@font-face {
+  font-family: Minecraft;
+  src: url(/fonts/Minecraft.ttf);
+}
+.header {
+  max-height: 6em;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: hsl(0deg, 0%, 20%);
+  align-items: center;
+  position: fixed;
+}
+
+.header-img {
+  height: 5em;
+  width: 5em;
+}
+
+.header-titles {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  font-family: "Minecraft", sans-serif;
+  margin: 0 0.5em 0 0.5em;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.nav-item {
+  color: hsl(0deg, 0%, 83%);
+  margin: 0 0.5em 0 0.5em;
+}
+
+.nav-link {
+  font-family: "Minecraft", sans-serif;
+  color: hsl(0deg, 0%, 83%);
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+.nav-link:hover {
+  color: #DD6D19;
+  transition: color 0.4s;
+}
+
+.header__rrss-list {
+  display: flex;
+  list-style: none;
+}
+
+.header__rrss-item {
+  margin: 0 0.4em 0 0.4em;
+}
+
+.header__rrss-img {
+  height: 1.2em;
+  width: 1.2em;
+  transition: all 0.2s;
+}
+
+.header__rrss-img:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(2px 2px 2px #DD6D19);
+  transition: all 0.2s;
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url(/fonts/Minecraft.ttf);
+}
+.main-joinus {
+  background-color: red;
+}
+
+.main-joinus {
+  min-height: 70vh;
+  background: rgb(98, 69, 47);
+  background: linear-gradient(0deg, rgb(98, 69, 47) 0%, rgb(51, 51, 51) 77%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#62452f",endColorstr="#333333",GradientType=1);
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url(/fonts/Minecraft.ttf);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  letter-spacing: 0.1em;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 20%);
+  color: hsl(0deg, 0%, 83%);
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  height: 200vh;
+  width: 100vw;
+  background-color: red;
+}/*# sourceMappingURL=index.css.map */

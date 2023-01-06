@@ -1,0 +1,15 @@
+@import "variables";
+
+.main-joinus{
+    background-color: red;
+}
+
+
+.main-joinus{
+    min-height: 70vh;
+    background: rgb(98,69,47);
+background: -moz-linear-gradient(0deg, rgba(98,69,47,1) 0%, rgba(51,51,51,1) 77%);
+background: -webkit-linear-gradient(0deg, rgba(98,69,47,1) 0%, rgba(51,51,51,1) 77%);
+background: linear-gradient(0deg, rgba(98,69,47,1) 0%, rgba(51,51,51,1) 77%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#62452f",endColorstr="#333333",GradientType=1);
+}
