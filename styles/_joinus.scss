@@ -66,13 +66,13 @@
 @media (max-width: 768px){
     .joinus-img{
         position: absolute;
-        z-index: 0;
+        z-index: -1;
         opacity: 20%;
         height: 25em;
         width: calc(25 / 2);
     }
 
     .joinus-content{
-        z-index: 1;
+        z-index: 0;
     }
 }
