@@ -1,75 +1,78 @@
+.main{}
 .section__joinus{
-    height: 80vh;
+    padding-top: 7em;
+    height: 85vh;
+    width: 100%;
     background: $gradiant-yellow;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 .joinus-img{
-    object-fit: contain;
-    max-height: 30em;
-    max-width: 30em;
-    margin: 0em 2em 0 2em;
+    height: 30em;
+    width: 20em;
+
 }
 .joinus-content{
-    color: $text-color;
-    font-family: $font-family;
-    max-width: 15em;
+    max-height: 20em;
+    max-width: 20em;
 }
-
+.joinus-title{
+    max-width: 5em;
+    font-family: $font-family;
+    font-size: 5rem;
+    color: $text-color;
+}
 .yellow{
     color: $yellow;
 }
-.joinus-title{
-    font-size: 4em;
-    color: $second-text-color;
-}
 .joinus-description{
-    margin: 1em 0 0 0;
-    color: $second-text-color;
-}
-
-.joinus-links{
-    display: flex;
-    margin: 1em 0 0 0;
-}
-
-.link{
-    text-decoration: none;
-    color: $text-color;
-    color: $second-text-color;
     font-family: $font-family;
+    font-size: 1.4rem;
     font-weight: 600;
-    font-size: 1.3rem;
+    color: $text-color;
+    letter-spacing: 0.070em;
 }
-
+.joinus-links{
+    font-family: $mine-font-family;
+    display: flex;
+    margin-top: 0.5em;
+}
 .joinus-link1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 6em;
     height: 2em;
+    width: 5em;
     background-color: $yellow;
-    border-radius: 0.3em;
-    padding: .2em;
-    color: #fff;
-    text-shadow: 2px 1px 1px #000;
-    letter-spacing: $space-lettering;
 }
-
 .joinus-link2{
-    margin: 0em 0 0 .5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-width: 8em;
+    width: 10em;
     height: 2em;
     background-color: rgba(234, 232, 242, 0.2);
-    border-radius: 0.3em;
-    padding: .2em;
-    letter-spacing: $space-lettering;
-    text-shadow: 2px 1px 1px #000;
+}
+.link{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0em .5em 0 0;
+    transition: transform 0.4s;
+}
+
+.link:hover{
+    transform: scale(1.040);
+    transition: transform 0.4s;
+}
+
+@media (max-width: 768px){
+    .joinus-img{
+        position: absolute;
+        z-index: 0;
+        opacity: 20%;
+        height: 25em;
+        width: calc(25 / 2);
+    }
+
+    .joinus-content{
+        z-index: 1;
+    }
 }

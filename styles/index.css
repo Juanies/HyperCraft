@@ -2,76 +2,137 @@
   font-family: Minecraft;
   src: url(/fonts/Minecraft.ttf);
 }
-@font-face {
-  font-family: Minecraft;
-  src: url(/fonts/Minecraft.ttf);
-}
 .header {
-  min-height: 4em;
-  max-height: 6em;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-family: "Minecraft", sans-serif;
-  background-color: rgb(17, 16, 19);
-  position: fixed;
+  height: 7em;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgb(17, 16, 19);
 }
 
 .header-titles {
   display: flex;
+  justify-content: center;
   align-items: center;
-  color: hsl(0deg, 0%, 83%);
 }
 
 .header-logo {
-  margin: 0 0.5em 0 0.5em;
-  width: 3em;
-  height: 3em;
+  height: 4em;
+  width: 4em;
 }
 
 .header-title {
-  font-size: 1.2rem;
+  font-family: "Minecraft", sans-serif;
   letter-spacing: 0.1em;
+  font-size: 1.3rem;
+  color: hsl(0deg, 0%, 83%);
 }
 
 .header__nav-list {
-  display: flex;
-  align-items: center;
-  list-style: none;
+  position: fixed;
+  width: 100%;
+  height: 60vh;
+  background-color: hsl(0deg, 0%, 20%);
+  top: -70vh;
+  left: 0;
+  text-align: center;
+  transition: top 0.5s;
 }
 
 .header__list-item {
-  margin: 0 0.5em 0 0.5em;
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  width: 100%;
 }
 
 .header__list-link {
+  transition: transform 0.4s;
+  border: 1px solid hsl(0deg, 0%, 83%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: hsl(0deg, 0%, 83%);
   text-decoration: none;
+  font-family: "Minecraft", sans-serif;
   letter-spacing: 0.1em;
 }
 
+.header__list-link:hover {
+  transform: scale(1.04);
+  transition: transform 0.4s;
+}
+
 .header__list__rrss {
-  display: flex;
+  display: none;
 }
 
-.header__list__rrss-list {
-  list-style: none;
-  margin: 0 0.5em 0 0.5em;
+.menu {
+  position: fixed;
+  bottom: 4em;
+  right: 2em;
+  background: radial-gradient(94% 58.3% at 50.3% 82.6%, #2a1f04 0%, var(--token-79f54f4b-5c08-4adb-84cd-68f4d833bf59, rgb(17, 16, 19)) 100%);
+  border-radius: 50%;
+  border: 1px solid hsl(0deg, 0%, 83%);
+  width: 5em;
+  height: 5em;
 }
 
-.header__list__rrss-link {
-  text-decoration: none;
-  color: hsl(0deg, 0%, 83%);
+.menu-img {
+  width: 2em;
 }
 
-.header__list__rrss-img {
-  width: 1.5em;
-  height: 1.5em;
+.activo {
+  top: -100%;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    justify-content: space-around;
+  }
+  .menu {
+    display: none;
+  }
+  .header__list__rrss {
+    display: flex;
+    list-style: none;
+  }
+  .header__list__rrss-list {
+    margin: 0 0 0 0.5em;
+  }
+  .header__list__rrss-img {
+    height: 1.3em;
+    width: 1.3em;
+  }
+  .header__nav-list {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 0;
+    top: 0;
+  }
+  .header__list-item {
+    height: 2em;
+  }
+  .header__list-link {
+    position: relative;
+    margin: 0 0.5em 0 0.5em;
+    border: none;
+    height: 2em;
+  }
+  .header__list__rrss-img:hover {
+    transform: scale(1.04);
+    transition: transform 0.4s;
+  }
+}
 .section__joinus {
-  height: 80vh;
+  padding-top: 7em;
+  height: 85vh;
+  width: 100%;
   background: radial-gradient(94% 58.3% at 50.3% 82.6%, #2a1f04 0%, var(--token-79f54f4b-5c08-4adb-84cd-68f4d833bf59, rgb(17, 16, 19)) 100%);
   display: flex;
   justify-content: center;
@@ -79,129 +140,90 @@
 }
 
 .joinus-img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-height: 30em;
-  max-width: 30em;
-  margin: 0em 2em 0 2em;
+  height: 30em;
+  width: 20em;
 }
 
 .joinus-content {
-  color: hsl(0deg, 0%, 83%);
+  max-height: 20em;
+  max-width: 20em;
+}
+
+.joinus-title {
+  max-width: 5em;
   font-family: "Barlow Condensed", sans-serif;
-  max-width: 15em;
+  font-size: 5rem;
+  color: hsl(0deg, 0%, 83%);
 }
 
 .yellow {
   color: rgb(250, 195, 56);
 }
 
-.joinus-title {
-  font-size: 4em;
-  color: rgb(255, 255, 255);
-}
-
 .joinus-description {
-  margin: 1em 0 0 0;
-  color: rgb(255, 255, 255);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 83%);
+  letter-spacing: 0.07em;
 }
 
 .joinus-links {
+  font-family: "Minecraft", sans-serif;
   display: flex;
-  margin: 1em 0 0 0;
-}
-
-.link {
-  text-decoration: none;
-  color: hsl(0deg, 0%, 83%);
-  color: rgb(255, 255, 255);
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 600;
-  font-size: 1.3rem;
+  margin-top: 0.5em;
 }
 
 .joinus-link1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 6em;
   height: 2em;
+  width: 5em;
   background-color: rgb(250, 195, 56);
-  border-radius: 0.3em;
-  padding: 0.2em;
-  color: #fff;
-  text-shadow: 2px 1px 1px #000;
-  letter-spacing: 0.1em;
 }
 
 .joinus-link2 {
-  margin: 0em 0 0 0.5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-width: 8em;
+  width: 10em;
   height: 2em;
   background-color: rgba(234, 232, 242, 0.2);
-  border-radius: 0.3em;
-  padding: 0.2em;
-  letter-spacing: 0.1em;
-  text-shadow: 2px 1px 1px #000;
 }
 
-@font-face {
-  font-family: Minecraft;
-  src: url(/fonts/Minecraft.ttf);
-}
-.section__memberstaff {
+.link {
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
-  width: 100%;
-  height: 20em;
+  text-decoration: none;
+  margin: 0em 0.5em 0 0;
+  transition: transform 0.4s;
 }
 
-.card__memberstaff {
-  width: 11em;
-  max-height: 20em;
-  padding: 1.5em;
-  border-radius: 1em;
-  color: hsl(0deg, 0%, 83%);
-  font-family: "Barlow Condensed", sans-serif;
-  margin: 0 0.5em 0 0.5em;
-  background-color: hsl(0deg, 0%, 20%);
+.link:hover {
+  transform: scale(1.04);
+  transition: transform 0.4s;
 }
 
-.card__memberstaff-header {
-  display: flex;
-  align-items: center;
+@media (max-width: 768px) {
+  .joinus-img {
+    position: absolute;
+    z-index: 0;
+    opacity: 20%;
+    height: 25em;
+    width: 12.5;
+  }
+  .joinus-content {
+    z-index: 1;
+  }
 }
-
-.card__memberstaff-titles {
-  margin: 0 0 0 0.5em;
-}
-
-.card__memberstaff-frame {
-  height: 2.5em;
-  width: 2.5em;
-}
-
-.card__memberstaff-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  border-radius: 1em;
-}
-
-.card__memberstaff-description {
-  margin: 1em 0em 0 0em;
-}
-
 body, * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 15%);
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100vw;
 }/*# sourceMappingURL=index.css.map */
