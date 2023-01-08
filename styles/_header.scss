@@ -1,0 +1,62 @@
+@import 'variables';
+
+.header{
+    min-height: 4em;
+    max-height: 6em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: $mine-font-family;
+    background-color: rgb(17, 16, 19);
+    position: fixed;
+    width: 100%;
+}
+.header-titles{
+    display: flex;
+    align-items: center;
+    color: $text-color;
+}
+.header-logo{
+    margin: 0 .5em 0 .5em;
+    width: 3em;
+    height: 3em;
+
+}
+.header-title{
+    font-size: 1.2rem;
+    letter-spacing: $space-lettering;
+}
+
+.header__nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header__list-item{
+    margin: 0 .5em 0 .5em;
+}
+
+
+.header__list-link{
+    color: $text-color;
+    text-decoration: none;
+    letter-spacing: $space-lettering;
+}
+
+.header__list__rrss{
+    display: flex;
+}
+.header__list__rrss-list{
+    list-style: none;
+    margin: 0 .5em 0 .5em;
+}
+
+.header__list__rrss-link{
+    text-decoration: none;
+    color: $text-color;
+}
+.header__list__rrss-img{
+    width: 1.5em;
+    height: 1.5em;
+}

@@ -1,0 +1,75 @@
+.section__joinus{
+    height: 80vh;
+    background: $gradiant-yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.joinus-img{
+    object-fit: contain;
+    max-height: 30em;
+    max-width: 30em;
+    margin: 0em 2em 0 2em;
+}
+.joinus-content{
+    color: $text-color;
+    font-family: $font-family;
+    max-width: 15em;
+}
+
+.yellow{
+    color: $yellow;
+}
+.joinus-title{
+    font-size: 4em;
+    color: $second-text-color;
+}
+.joinus-description{
+    margin: 1em 0 0 0;
+    color: $second-text-color;
+}
+
+.joinus-links{
+    display: flex;
+    margin: 1em 0 0 0;
+}
+
+.link{
+    text-decoration: none;
+    color: $text-color;
+    color: $second-text-color;
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.joinus-link1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 6em;
+    height: 2em;
+    background-color: $yellow;
+    border-radius: 0.3em;
+    padding: .2em;
+    color: #fff;
+    text-shadow: 2px 1px 1px #000;
+    letter-spacing: $space-lettering;
+}
+
+.joinus-link2{
+    margin: 0em 0 0 .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 8em;
+    height: 2em;
+    background-color: rgba(234, 232, 242, 0.2);
+    border-radius: 0.3em;
+    padding: .2em;
+    letter-spacing: $space-lettering;
+    text-shadow: 2px 1px 1px #000;
+}

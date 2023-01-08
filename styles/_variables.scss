@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Minecraft;
+    src: url(/fonts/Minecraft.ttf);
+}
+
+$text-color: hsl(0, 0%, 83%);
+$second-text-color:rgb(255, 255, 255);
+$bg-color: hsl(0, 0%, 15%);
+$bg-card-color: hsl(0, 0%, 20%);
+$orange: #DD6D19;
+$box-shadow:    0.5em 0.5em 2em #1b1b1b,inset 0 0 0 #353535;
+$border-radius: 0.7em;
+$font-family: 'Barlow Condensed', sans-serif;
+$mine-font-family: "Minecraft", sans-serif;
+$space-lettering: 0.10em;
+$yellow: rgba(250, 195, 56);
+$gradiant-yellow: radial-gradient(94% 58.3% at 50.3% 82.6%, #2a1f04 0%, var(--token-79f54f4b-5c08-4adb-84cd-68f4d833bf59, rgb(17, 16, 19)) 100%);
