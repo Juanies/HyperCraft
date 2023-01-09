@@ -230,7 +230,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30em;
+  min-height: 40vh;
   width: 100%;
   z-index: 2;
 }
@@ -309,14 +309,13 @@
 
 .title__developer {
   font-size: 3rem;
+  color: #fff;
 }
 
 .description__developer {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.4rem;
   color: hsl(0deg, 0%, 83%);
-  letter-spacing: 0.07em;
 }
 
 .vacantes-developer {
@@ -361,6 +360,10 @@
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.4rem;
   letter-spacing: 0.02em;
+}
+
+.title__staff {
+  color: #fff;
 }
 
 .description__staff {
@@ -420,6 +423,88 @@
     transform: rotate(0deg);
   }
 }
+@font-face {
+  font-family: Minecraft;
+  src: url(/fonts/Minecraft.ttf);
+}
+.section__resultados {
+  height: calc(100vh - 6em);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #FFF;
+}
+
+.process__resultados {
+  color: rgb(107, 97, 255);
+}
+
+.title__resultados {
+  font-family: "Minecraft", sans-serif;
+}
+
+.subtitle__resultados {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 4rem;
+  width: 5em;
+}
+
+.description__resultados {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.4rem;
+  max-width: 20em;
+}
+
+.link__resultados {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.discord__resultados {
+  width: 10em;
+}
+
+.targets__resultados {
+  margin-left: 1em;
+}
+
+.cards__resultados {
+  margin: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  max-width: 30em;
+  background-color: rgb(211, 209, 209);
+  max-height: 10em;
+  border-radius: 0.4em;
+  padding: 1em;
+  transition: transform 0.4s;
+}
+
+.cards__resultados:hover {
+  transform: scale(1.02);
+  transition: transform 0.4s;
+}
+
+.cards__resultados-cabecera {
+  display: flex;
+  align-items: center;
+}
+
+.cards__resultados-img {
+  width: 2em;
+  height: 2em;
+}
+
+.cards__resultados-title {
+  color: rgb(107, 97, 255);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.4rem;
+}
+
+.cards__resultados-description {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
 body, * {
   margin: 0;
   padding: 0;

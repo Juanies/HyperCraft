@@ -17,13 +17,12 @@
 }
 .title__developer{
     font-size: 3rem;
+     color:#fff;
 }
 .description__developer{
     font-family: "Barlow Condensed", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: hsl(0deg, 0%, 83%);
-    letter-spacing: 0.07em;
+    font-size: 1.4rem;
+    color: $text-color;
 }
 .vacantes-developer{
     justify-content: space-around;
