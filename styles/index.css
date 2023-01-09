@@ -221,6 +221,66 @@
     z-index: 3;
   }
 }
+@font-face {
+  font-family: Minecraft;
+  src: url(/fonts/Minecraft.ttf);
+}
+.section__memberstaff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+}
+
+@media (max-width: 768px) {
+  .section__memberstaff {
+    flex-direction: column;
+    padding: 1em;
+    height: 45em;
+  }
+  .card__memberstaff {
+    margin: 0em 0em 0em 0em;
+  }
+}
+.card__memberstaff {
+  margin: 1em;
+  max-width: 13em;
+  color: hsl(0deg, 0%, 83%);
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: hsl(0deg, 0%, 20%);
+  box-shadow: 0.5em 0.5em 2em #1b1b1b, inset 0 0 0 #353535;
+  transition: transform 0.4s;
+}
+
+.card__memberstaff:hover {
+  transform: scale(1.04);
+  transition: transform 0.4s;
+}
+
+.card__memberstaff-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card__memberstaff-frame {
+  background-color: red;
+  height: 3em;
+}
+
+.card__memberstaff-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card__memberstaff-titles {
+  margin: 0 0 0 0.5em;
+}
+
 body, * {
   margin: 0;
   padding: 0;
