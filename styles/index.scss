@@ -3,6 +3,7 @@
 @import 'joinus';
 @import 'memberstaff';
 @import 'developer';
+@import 'staff';
 
 body, *{
     margin: 0;
@@ -14,10 +15,11 @@ body{
     background-color: $bg-color;
     width: 100%;
     height: 100%;
-
 }
 
+
+
 main{
-    width:100vw;
+    width:100%;
 }
 

@@ -2,7 +2,7 @@
 
 .section__developer{
     color: $text-color;
-    height: 25em;
+    height: calc(100vh - 6em);
     background: radial-gradient(94% 92.9% at 100% 96.1%, rgb(37, 65, 42) 0%, rgb(17, 16, 19) 100%)    ;
     font-family: $font-family;
     display: flex;
@@ -26,10 +26,11 @@
     letter-spacing: 0.07em;
 }
 .vacantes-developer{
+    justify-content: space-around;
     height: 3em;
     background-color: $bg-card-color;
     box-shadow: $box-shadow;
-    width: 13em;
+    width: 14em;
     font-family: "DM Mono", monospace;
     border-radius: 0.4em;
     display: flex;
@@ -39,10 +40,14 @@
 .img__developer{
     height: 15em;
     width: 15em;
+    margin: 0 0 0 2em;
+}
+
+@media (max-width: 768px){
+    .img__developer{
+        position: absolute;
+        opacity: 0.20;
+    }
 }
 
 
-.arrow{
-    height: 1em;
-    width: 1em;
-}
