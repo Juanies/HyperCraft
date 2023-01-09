@@ -441,6 +441,9 @@
   .section__staff {
     align-items: center;
   }
+  .description__staff {
+    width: 100%;
+  }
 }
 @font-face {
   font-family: Minecraft;
@@ -606,6 +609,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+  }
+  .head-description {
+    width: 12em;
+  }
+  .head-title {
+    width: 100%;
+    font-size: 3rem;
   }
 }
 body, * {
