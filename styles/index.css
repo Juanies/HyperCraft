@@ -10,6 +10,7 @@
   justify-content: center;
   position: fixed;
   background-color: rgb(17, 16, 19);
+  z-index: 3;
 }
 
 .header-titles {
@@ -229,17 +230,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20em;
+  height: 30em;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
   .section__memberstaff {
     flex-direction: column;
     padding: 1em;
-    height: 45em;
-  }
-  .card__memberstaff {
-    margin: 0em 0em 0em 0em;
+    height: 50em;
   }
 }
 .card__memberstaff {
@@ -279,6 +278,11 @@
 
 .card__memberstaff-titles {
   margin: 0 0 0 0.5em;
+  font-size: 1.2rem;
+}
+
+.card__memberstaff-description {
+  font-size: 1.2rem;
 }
 
 body, * {

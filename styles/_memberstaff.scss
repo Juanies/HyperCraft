@@ -4,17 +4,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20em;
+    height: 30em;
+    z-index: 2;
 }
 
 @media (max-width: 768px) {
     .section__memberstaff{
         flex-direction: column;
         padding: 1em;
-        height: 45em;
-    }
-    .card__memberstaff{
-        margin: 0em 0em 0em 0em;
+        height: 50em;
     }
 }
 
@@ -52,10 +50,13 @@
 
 .card__memberstaff-titles{
     margin: 0 0 0 0.5em;
+    font-size: 1.2rem;
 }
 
 
 
 .card__memberstaff-name{}
 .card__memberstaff-rank{}
-.card__memberstaff-description{}
+.card__memberstaff-description{
+    font-size: 1.2rem;
+}
