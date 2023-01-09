@@ -1,8 +1,48 @@
 @import 'variables';
 
-.section__developer{}
-.content__developer{}
-.title__developer{}
-.description__developer{}
-.vacantes__developer{}
-.img__developer{}
+.section__developer{
+    color: $text-color;
+    height: 25em;
+    background: radial-gradient(94% 92.9% at 100% 96.1%, rgb(37, 65, 42) 0%, rgb(17, 16, 19) 100%)    ;
+    font-family: $font-family;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.verde{
+    color: rgb(85, 255, 181);
+}
+.content__developer{
+    max-width: 20em;
+}
+.title__developer{
+    font-size: 3rem;
+}
+.description__developer{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: hsl(0deg, 0%, 83%);
+    letter-spacing: 0.07em;
+}
+.vacantes-developer{
+    height: 3em;
+    background-color: $bg-card-color;
+    box-shadow: $box-shadow;
+    width: 13em;
+    font-family: "DM Mono", monospace;
+    border-radius: 0.4em;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+}
+.img__developer{
+    height: 15em;
+    width: 15em;
+}
+
+
+.arrow{
+    height: 1em;
+    width: 1em;
+}
