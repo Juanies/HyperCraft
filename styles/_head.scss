@@ -41,7 +41,22 @@
     justify-content: space-evenly;
     margin-top: 0.5em;
     max-width: 13em;
+    overflow: hidden;
 }
 .red{
     color: rgb(217, 69, 69);
+}
+
+@media (max-width:1344px){
+    .head-img{
+        display: none;
+    }
+    .section__head{
+        text-align: center;
+    }
+    .head-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

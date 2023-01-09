@@ -47,6 +47,14 @@
         position: absolute;
         opacity: 0.20;
     }
+    .title__developer, .description__developer{
+        text-align: center;
+    }
+    .content__developer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 

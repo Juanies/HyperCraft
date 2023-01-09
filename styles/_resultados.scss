@@ -69,3 +69,18 @@
 .cards__resultados-description{
     font-family: $font-family;
 }
+
+@media (max-width: 768px){
+    .section__resultados{
+        flex-direction: column;
+    }
+    .subtitle__resultados{
+        width: 100%;
+    }
+    .section__resultados{
+        height: 120vh;
+    }
+    .process__resultados{
+        text-align: center;
+    }
+}
