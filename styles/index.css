@@ -632,4 +632,8 @@ body {
 
 main {
   width: 100%;
+}
+
+img {
+  pointer-events: none;
 }/*# sourceMappingURL=index.css.map */
