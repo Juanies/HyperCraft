@@ -23,10 +23,11 @@ boton.addEventListener('click', function() {
 
 })
 
+let width = window.innerWidth;
+let height = window.innerHeight;
 
 window.addEventListener('resize', () => {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
+
 
 
     if ( width > 768 ) {

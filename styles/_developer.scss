@@ -1,6 +1,7 @@
 @import 'variables';
 
 .section__developer{
+    width: 100%;
     color: $text-color;
     height: calc(100vh - 6em);
     background: radial-gradient(94% 92.9% at 100% 96.1%, rgb(37, 65, 42) 0%, rgb(17, 16, 19) 100%)    ;

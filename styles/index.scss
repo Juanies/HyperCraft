@@ -6,6 +6,7 @@
 @import 'staff';
 @import 'resultados';
 @import 'head';
+@import 'footer';
 
 body, *{
     margin: 0;
@@ -21,7 +22,7 @@ body{
 
 
 
-main{
+.main{
     width:100%;
 }
 

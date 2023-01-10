@@ -6,6 +6,7 @@
     align-items: center;
     display: flex;
     background-color: #FFF;
+    width: 100%;
 }
 .process__resultados{
     color: rgb(107, 97, 255);
@@ -42,10 +43,15 @@
     border: 1px solid rgba(0, 0, 0, 0.08);
     max-width: 30em;
     background-color: rgb(211, 209, 209);
+    box-shadow:  0.5em 0.5em 0.5em #7b7b7b,inset 0 0 0 #353535;
     max-height: 10em;
     border-radius: 0.4em;
     padding: 1em;
     transition: transform 0.4s;
+}
+
+.targets__resultados{
+    margin-left: 0em;
 }
 
 .cards__resultados:hover{
@@ -73,14 +79,26 @@
 @media (max-width: 768px){
     .section__resultados{
         flex-direction: column;
+        max-height: 70em;
     }
     .subtitle__resultados{
         width: 100%;
+        font-size: 1.3rem;
     }
+
     .section__resultados{
         height: 120vh;
     }
     .process__resultados{
         text-align: center;
+    }
+    .cards__resultados{
+        margin: 0em 0em 1em 0em;
+        width: 100%;
+        padding: 0;
+    }
+    .targets__resultados{
+        width: 80%;
+
     }
 }

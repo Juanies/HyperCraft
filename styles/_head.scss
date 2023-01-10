@@ -5,6 +5,7 @@
     justify-content: space-evenly;
     align-items: center;
     height: 30em;
+    width: 100%;
     background: radial-gradient(94% 92.9% at 0% 100%, rgb(80, 33, 33) 0%, rgb(17, 16, 19) 100%);
 }
 .head-content{
@@ -61,10 +62,9 @@
         width: 100%;
     }
     .head-description{
-        width: 12em;
+        width: 90%;
     }
     .head-title{
-        width: 100%;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
